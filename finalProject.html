@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Library Tracker</title>
+    <link rel="stylesheet" href="finalProject.css">
+    <script src = "finalProject.js"></script>
+</head>
+
+
+
+<body>
+    <form name="Library">
+        
+        Book Title: <input type = "text" name = "bookTitle" id = "bookTitle">
+        <br>
+        Genre: <input type = "text" name = "bookGenre" id = "bookGenre">
+        <br>
+        <input type ="button" value = "Add" onClick="addBook()">\
+
+        <h2>List of Books</h2>
+ 
+        <table style="width:100%" id="myTable">
+         <tr>
+           <th>Book Title</th>
+           <th>Genre</th> 
+            <th>Date Checked Out</th>
+            <th>Status</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>Dictionary</td>
+            <td>Educational</td>
+            <td>Checked out on 18/11/2020</td>
+            <td>Checked out by Me</td>
+           <td><input type="button" value="Check Out" onclick="checkOutBook(this)"></td> 
+          <td><input type="button" value="Remove" onclick="removeBook(this)"></td> 
+        </tr>
+        </table>
+
+
+
+    </form>    
+
+    
+</body>
+
+
+
+</html>

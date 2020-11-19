@@ -9,8 +9,7 @@ function addBook(){
 
   //create an element with the tags stored as a variable, newTask
     // var newBook = document.createElement('bk');
-
-    // newBook = <li><li>
+    // use span or div for class
 
     //newBook.innerHTML = <div class = "bookItem"><p>${bookName}<\p><p></p><button class 'addBook'>complete</button><button class= 'delButton'></div>
 
