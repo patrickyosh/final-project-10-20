@@ -1,8 +1,10 @@
     function addBook(){
 
         var bookTitle = document.getElementById("bookTitle").value;
-        var bookGenre = document.getElementById("bookGenre").value;    
-        
+        var bookGenre = document.getElementById("bookGenre").value; 
+        document.getElementById("bookTitle").value = "";
+        document.getElementById("bookGenre").value = "";
+
         var table = document.getElementById("myTable");
 
         var checkOutBTN = document.createElement("button");
@@ -36,7 +38,7 @@
      var row = btn.parentNode.parentNode;
      
     
-       console.log("LOG");
+      console.log("LOG");
       var today = new Date();
       var dd = String(today.getDate()).padStart(2, '0');
       var mm = String(today.getMonth()+1).padStart(2,'0');
@@ -52,6 +54,7 @@
       else {
         row.cells[2].innerHTML = "Checked out on " + today;
         row.cells[3].innerHTML = "Checked out by " + name;
+        
       }
 
 
